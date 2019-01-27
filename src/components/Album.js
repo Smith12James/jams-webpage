@@ -10,7 +10,43 @@ class Album extends Component {
     const album = album.Data.find( album => {
       return album.slug === this.props.match.params.slug
     });
+
+    this.state = {
+      album: album,
+      currentSong: album.songs[0],
+      isPlaying: false
+    };
+
+    this.audioElement = document.createElement('audio');
+    this.audioElement.src = album.songs[0].audioSrc;
+
   }
+
+play() {
+  this.audioElement.play();
+  this.setState({ isPlaying: true });
+}
+
+pause() {
+  this.audioElement.pause();
+  this.setState({ isPlaying: false });
+}
+
+setSong(song) {
+  this.audioElement.src = song.audioSrc;
+  this.setState({ currentSong: song });
+}
+
+handleSongClick(song) {
+  const isSameSong = this.state.currentSong === song;
+  if (this.state.isPlaying && isSameSong) {
+    this.pause();
+  } else {
+    if (!isSameSong) { this.setSong(song); }
+    this.play();
+  }
+}
+
   render() {
     return (
       <section className="album">
@@ -32,12 +68,9 @@ class Album extends Component {
             <section className='library'>
               {
                 this.state.album.songs.map( (album, songs, index) =>
-                  <Link to={`/album/${album.slug.songs}`} key={index}>
-                    <tr id="song1">{album.songs}</tr>
-                    <tr id="song2">{album.songs}</tr>
-                    <tr id="song3">{album.songs}</tr>
-                    <tr id="song4">{album.songs}</tr>
-                    <tr id="song5">{album.songs}</tr>
+                  <Link to={`/album/${album.songs}`} key={index}>
+                    <tr className="song" key={index} onClick={() => this.handleSongClick(song)} >
+                    </tr>
                   </Link>
                 )
               }
