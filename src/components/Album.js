@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import albumData from './../data/albums';
+import Library from './Library'
 
 class Album extends Component {
   constructor(props) {
     super(props);
 
-
     const album = albumData.find( album => {
       return album.slug === this.props.match.params.slug;
     });
- 
+
     this.state = {
       album: album,
-      currentSong: album.songs[0],
+      currentSong: album.songs,
       isPlaying: false
     };
 
