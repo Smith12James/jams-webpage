@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import albumData from './../data/albums';
-import Library from './Library'
 
 class Album extends Component {
   constructor(props) {
@@ -13,7 +11,7 @@ class Album extends Component {
 
     this.state = {
       album: album,
-      currentSong: album.songs,
+      currentSong: album.songs[0],
       isPlaying: false
     };
 
