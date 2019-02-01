@@ -16,7 +16,8 @@ class Album extends Component {
       currentTime: 0,
       duration: album.songs[0].duration,
       volume: 0.5,
-      isPlaying: false
+      isPlaying: false,
+      isHovered: false
     };
 
 
@@ -44,6 +45,7 @@ class Album extends Component {
     this.audioElement.removeEventListener('timeupdate', this.eventListener.timeupdate);
     this.audioElement.removeEventListener('durationchange', this.eventListeners.durationchange);
   }
+
 
   play() {
     this.audioElement.play();
