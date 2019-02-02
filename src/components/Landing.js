@@ -1,9 +1,11 @@
 import React from 'react';
+import './Landing.css';
+import './blur_bg_3_copy.jpg';
 
 const Landing = () => (
   <section className="landing">
+    <img className="blurred-image" src="./../../public/assets/images/blurred_backgrounds/blur_bg_3.jpg" alt="Blurred colors" />
     <h1 className="hero-title">Turn the music up!</h1>
-
     <section className="selling-points">
       <div className="point">
         <h2 className="point-title">Choose your music</h2>
