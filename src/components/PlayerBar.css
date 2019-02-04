@@ -1,0 +1,74 @@
+.player-bar {
+  position: fixed;
+  background-color: #1f2542;
+  bottom: 27px;
+  width: 100%;
+  height: 100px;
+  color: white;
+  margin-left: -5px;
+}
+
+.ion-skip-backward {
+  position: fixed;
+  color: white;
+  left: 648px;
+  bottom: 70px;
+  font-size: 20px;
+}
+
+.ion-skip-backward:hover {
+  color: #484848;
+  cursor: pointer;
+}
+
+#play-pause-2 {
+  position: fixed;
+  left: 695px;
+  bottom: 63px;
+  font-size: 30px;
+  padding-right: 5px;
+}
+
+#play-pause-2:hover {
+  color: #484848;
+  cursor: pointer;
+}
+
+.ion-skip-forward {
+  position: fixed;
+  color: white;
+  left: 750px;
+  bottom: 70px;
+  font-size: 20px;
+}
+
+.ion-skip-forward:hover {
+  color: #484848;
+  cursor: pointer;
+}
+
+.show-time {
+  position: fixed;
+  left: 235px;
+  bottom: 67px;
+}
+
+.volume-slide {
+  position: fixed;
+  left: 1100px;
+  bottom: 74px;
+}
+
+#volume-down {
+  position: fixed;
+  bottom: 74px;
+  right: 345px;
+  font-size: 20px;
+}
+
+#volume-up {
+  position: fixed;
+  bottom: 70px;
+  right: 170px;
+  font-size: 25px;
+}

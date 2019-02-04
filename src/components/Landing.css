@@ -1,0 +1,104 @@
+.hero-title {
+  position: absolute;
+  margin-top: -750px ;
+  left: 520px;
+}
+
+.point {
+  font-style: bold;
+  float: left;
+  width: 33%;
+}
+
+.selling-points:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.point-title {
+  position: relative;
+}
+
+.point-description {
+  position: relative;
+}
+
+#choose {
+  top: -680px;
+  left: 50px;
+}
+
+#your-music {
+  top: -675px;
+}
+
+#unlimited {
+  top: -680px;
+  left: 10px;
+}
+
+#streaming {
+  top: -675px;
+  left: 50px;
+}
+
+#mobile {
+  top: -1000px;
+  right: -600px;
+}
+
+#enabled {
+  top: -1000px;
+  right: -490px;
+}
+
+.hr1 {
+  position: absolute;
+  top: 350px;
+  left: 480px;
+  width: 1px;
+  height: 350px;
+  background: #fff;
+  margin-right: 17px;
+}
+
+.hr2 {
+  position: absolute;
+  top: 350px;
+  right: 480px;
+  width: 1px;
+  height: 350px;
+  background: #fff;
+  margin-right: 17px;
+}
+
+.blurred-image {
+  margin-top: -218px;
+  margin-left: -10px;
+  width: 110%;
+  height: 100%;
+}
+
+.girl-listening {
+  position: relative;
+  height: 200px;
+  width: 350px;
+  bottom: 688px;
+}
+
+.no-limits {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  right: -110px;
+  bottom: 688px;
+}
+
+.on-go {
+  position: relative;
+  height: 200px;
+  width: 375px;
+  right: -520px;
+  bottom: 1010px;
+}
